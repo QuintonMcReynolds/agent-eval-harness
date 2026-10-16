@@ -1,0 +1,7 @@
+# Running agents + the judge locally (Apple silicon, MLX).
+-r requirements-core.txt
+mlx==0.32.4
+mlx-lm==0.32.2
+# the geoint-triage environment's tool server
+onnxruntime==1.31.0
+pillow==12.3.0

@@ -1,0 +1,20 @@
+name: ci
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements-core.txt
+      # unit tests, grader-drift check (re-grade every committed run), and the recorded release decisions
+      - run: python -m pytest -q
+      # the gate's verdict on the candidate under review (gate.env); informational, the decision tests above enforce it
+      - name: release gate (candidate under review)
+        run: make gate PY=python || echo "::warning::candidate in gate.env is blocked by the release gate"
+      - run: python -m harness.cli report
+      - uses: actions/upload-artifact@v4
+        with: {name: eval-report, path: reports/index.html}

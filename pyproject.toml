@@ -1,0 +1,12 @@
+[project]
+name = "agent-eval-harness"
+version = "0.1.0"
+description = "Replay, grade and regression-test tool-using LLM agents: deterministic checks + a validated LLM judge + paired statistics."
+requires-python = ">=3.11"
+
+[project.scripts]
+harness = "harness.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
