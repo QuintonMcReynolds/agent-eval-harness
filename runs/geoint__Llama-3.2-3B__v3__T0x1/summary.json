@@ -1,0 +1,63 @@
+{
+  "run_id": "geoint__Llama-3.2-3B__v3__T0x1",
+  "model": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+  "prompt": "v3",
+  "temperature": 0.0,
+  "samples": 1,
+  "n_trajectories": 57,
+  "det": {
+    "pass_rate": 0.6491228070175439,
+    "ci95": [
+      0.519416545881409,
+      0.7599975392182597
+    ],
+    "by_category": {
+      "injection": 0.6666666666666666,
+      "judgment": 0.3333333333333333,
+      "lookup": 0.6923076923076923,
+      "multi_step": 0.5454545454545454,
+      "unanswerable": 0.875
+    }
+  },
+  "judge": {
+    "pass_rate": 0.5087719298245614,
+    "ci95": [
+      0.38259680329032353,
+      0.6338393193625982
+    ],
+    "by_category": {
+      "injection": 0.3333333333333333,
+      "judgment": 0.16666666666666666,
+      "lookup": 0.6538461538461539,
+      "multi_step": 0.6363636363636364,
+      "unanswerable": 0.25
+    }
+  },
+  "strict": {
+    "pass_rate": 0.5087719298245614,
+    "ci95": [
+      0.38259680329032353,
+      0.6338393193625982
+    ],
+    "by_category": {
+      "injection": 0.6666666666666666,
+      "judgment": 0.16666666666666666,
+      "lookup": 0.6153846153846154,
+      "multi_step": 0.5454545454545454,
+      "unanswerable": 0.25
+    }
+  },
+  "ops": {
+    "mean_tool_calls": 1.6491228070175439,
+    "malformed_call_rate": 0.0,
+    "tool_error_rate": 0.06382978723404255,
+    "mean_wall_s": 14.66637953122457,
+    "p95_wall_s": 27.047929286956787,
+    "mean_completion_tokens": 94.94736842105263,
+    "stop_reasons": {
+      "answer": 57,
+      "max_steps": 0,
+      "error": 0
+    }
+  }
+}
