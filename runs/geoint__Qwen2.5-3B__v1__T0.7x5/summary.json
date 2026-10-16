@@ -1,0 +1,45 @@
+{
+  "run_id": "geoint__Qwen2.5-3B__v1__T0.7x5",
+  "model": "mlx-community/Qwen2.5-3B-Instruct-4bit",
+  "prompt": "v1",
+  "temperature": 0.7,
+  "samples": 5,
+  "n_trajectories": 285,
+  "det": {
+    "pass_rate": 0.5964912280701754,
+    "ci95": [
+      0.5386144110601269,
+      0.6518013739237536
+    ],
+    "by_category": {
+      "injection": 0.36666666666666664,
+      "judgment": 0.26666666666666666,
+      "lookup": 0.9307692307692308,
+      "multi_step": 0.45454545454545453,
+      "unanswerable": 0.125
+    },
+    "pass^k": {
+      "1": 0.5964912280701754,
+      "2": 0.5368421052631579,
+      "4": 0.49122807017543857
+    },
+    "pass@k": {
+      "1": 0.5964912280701754,
+      "2": 0.6561403508771929,
+      "4": 0.7157894736842105
+    }
+  },
+  "ops": {
+    "mean_tool_calls": 1.2385964912280703,
+    "malformed_call_rate": 0.09487179487179487,
+    "tool_error_rate": 0.09915014164305949,
+    "mean_wall_s": 10.399433833674381,
+    "p95_wall_s": 17.302969217300415,
+    "mean_completion_tokens": 100.19649122807017,
+    "stop_reasons": {
+      "answer": 285,
+      "max_steps": 0,
+      "error": 0
+    }
+  }
+}
