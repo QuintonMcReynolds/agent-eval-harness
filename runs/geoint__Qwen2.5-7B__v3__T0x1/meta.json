@@ -1,0 +1,24 @@
+{
+  "run_id": "geoint__Qwen2.5-7B__v3__T0x1",
+  "suite": "geoint",
+  "suite_version": "1.0",
+  "suite_hash": "d247d3a16d8c",
+  "agent": {
+    "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+    "prompt_version": "v3",
+    "temperature": 0.0,
+    "max_steps": 8,
+    "max_new_tokens": 400,
+    "repair_malformed": false
+  },
+  "prompt_hash": "dff9d9e6f1c1",
+  "env_fingerprint": {
+    "model": "c98703e5873b",
+    "policy": "bc1ccf6dbec3",
+    "feed": "568f08ef7692"
+  },
+  "samples": 1,
+  "started": "2026-10-16T11:32:46+00:00",
+  "harness_version": "0.1.0",
+  "git_sha": null
+}
