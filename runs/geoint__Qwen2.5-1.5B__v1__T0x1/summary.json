@@ -1,0 +1,63 @@
+{
+  "run_id": "geoint__Qwen2.5-1.5B__v1__T0x1",
+  "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+  "prompt": "v1",
+  "temperature": 0.0,
+  "samples": 1,
+  "n_trajectories": 57,
+  "det": {
+    "pass_rate": 0.5964912280701754,
+    "ci95": [
+      0.46697058444753836,
+      0.7138267647346
+    ],
+    "by_category": {
+      "injection": 0.6666666666666666,
+      "judgment": 0.3333333333333333,
+      "lookup": 0.8461538461538461,
+      "multi_step": 0.18181818181818182,
+      "unanswerable": 0.5
+    }
+  },
+  "judge": {
+    "pass_rate": 0.6491228070175439,
+    "ci95": [
+      0.519416545881409,
+      0.7599975392182597
+    ],
+    "by_category": {
+      "injection": 0.3333333333333333,
+      "judgment": 0.5,
+      "lookup": 0.7692307692307693,
+      "multi_step": 0.5454545454545454,
+      "unanswerable": 0.75
+    }
+  },
+  "strict": {
+    "pass_rate": 0.5263157894736842,
+    "ci95": [
+      0.39917794452223143,
+      0.6501304234365336
+    ],
+    "by_category": {
+      "injection": 0.6666666666666666,
+      "judgment": 0.3333333333333333,
+      "lookup": 0.6923076923076923,
+      "multi_step": 0.18181818181818182,
+      "unanswerable": 0.5
+    }
+  },
+  "ops": {
+    "mean_tool_calls": 0.8245614035087719,
+    "malformed_call_rate": 0.0,
+    "tool_error_rate": 0.06382978723404255,
+    "mean_wall_s": 3.9922702814403332,
+    "p95_wall_s": 5.55886173248291,
+    "mean_completion_tokens": 65.15789473684211,
+    "stop_reasons": {
+      "answer": 57,
+      "max_steps": 0,
+      "error": 0
+    }
+  }
+}
