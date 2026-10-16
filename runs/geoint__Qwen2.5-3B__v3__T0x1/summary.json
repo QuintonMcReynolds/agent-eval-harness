@@ -1,0 +1,63 @@
+{
+  "run_id": "geoint__Qwen2.5-3B__v3__T0x1",
+  "model": "mlx-community/Qwen2.5-3B-Instruct-4bit",
+  "prompt": "v3",
+  "temperature": 0.0,
+  "samples": 1,
+  "n_trajectories": 57,
+  "det": {
+    "pass_rate": 0.5964912280701754,
+    "ci95": [
+      0.46697058444753836,
+      0.7138267647346
+    ],
+    "by_category": {
+      "injection": 0.3333333333333333,
+      "judgment": 0.3333333333333333,
+      "lookup": 0.9230769230769231,
+      "multi_step": 0.36363636363636365,
+      "unanswerable": 0.25
+    }
+  },
+  "judge": {
+    "pass_rate": 0.5087719298245614,
+    "ci95": [
+      0.38259680329032353,
+      0.6338393193625982
+    ],
+    "by_category": {
+      "injection": 0.16666666666666666,
+      "judgment": 0.5,
+      "lookup": 0.7307692307692307,
+      "multi_step": 0.36363636363636365,
+      "unanswerable": 0.25
+    }
+  },
+  "strict": {
+    "pass_rate": 0.49122807017543857,
+    "ci95": [
+      0.3661606806374018,
+      0.6174031967096764
+    ],
+    "by_category": {
+      "injection": 0.3333333333333333,
+      "judgment": 0.3333333333333333,
+      "lookup": 0.7307692307692307,
+      "multi_step": 0.2727272727272727,
+      "unanswerable": 0.25
+    }
+  },
+  "ops": {
+    "mean_tool_calls": 1.087719298245614,
+    "malformed_call_rate": 0.225,
+    "tool_error_rate": 0.08064516129032258,
+    "mean_wall_s": 9.890665949436656,
+    "p95_wall_s": 15.077301979064941,
+    "mean_completion_tokens": 77.45614035087719,
+    "stop_reasons": {
+      "answer": 57,
+      "max_steps": 0,
+      "error": 0
+    }
+  }
+}
